@@ -35,13 +35,13 @@ server.delete("/users", async (req, res) => {
 });
 
 // Configuração do multer para salvar as imagens no diretório "uploads"
-const diskStorage = multer.diskStorage({
+const storage = multer.diskStorage({
   destination: "./uploads",
   filename: (req, file, callback) => {
     callback(null, `${Date.now()} - ${file.originalname}`);
   },
 });
-const upload = multer({ storage: diskStorage });
+const upload = multer({ storage });
 
 // Rota para receber a imagem e salvar no banco de dados
 server.post("/users/:id/image", upload.single("image"), async (req, res) => {
