@@ -1,0 +1,32 @@
+{
+  "name": "image-local-store",
+  "version": "0.0.1",
+  "description": "A simple and no-production-ready example build with Nodejs, Prisma and SqLite.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/osmarleandro/image-local-store"
+  },
+  "keywords": [
+    "image",
+    "local",
+    "store",
+    "no-production",
+    "nodejs",
+    "prisma",
+    "sqlite",
+    "example"
+  ],
+  "author": "osmarleandrods@gmail.com",
+  "license": "MIT",
+  "dependencies": {
+    "@prisma/client": "^4.13.0",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "multer": "^1.4.5-lts.1",
+    "sqlite3": "^5.1.6"
+  }
+}
